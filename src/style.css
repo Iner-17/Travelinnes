@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+nav {
+    background-color: #202020;
+    position: fixed;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+}
+
+nav .logo {
+    text-transform: uppercase;
+    color: #f4f4f4;
+    font-size: 1.6em;
+    font-weight: 800;
+    width: 10%;
+}
+
+nav .header-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav .header-links li {
+    position: relative;
+    padding: 12px;
+
+}
+
+nav .header-links li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    height: 0;
+    background-color: #f4f4f4;
+    transition: 0.3s;
+}
+
+nav .header-links li::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 0;
+    background-color: #f4f4f4;
+    transition: 0.3s;
+}
+
+nav .header-links li:hover::before {
+    height: 100%;
+}
+
+nav .header-links li:hover::after {
+    height: 100%;
+}
+
+nav .header-links a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+nav .header-links a:hover {
+    color: #b9b9b9;
+}
+
+nav .ctn-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    font-size: 14px;
+}
+
+nav .ctn-form a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+nav .ctn-form a.active {
+    color: #202020;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    padding: 3px 12px;
+}
+
+nav .ctn-form a.active:hover {
+    background-color: #b9b9b9;
+}
+
+.container {
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.bg-image {
+    background-image: url('images/rice.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container .front-page {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -25%);
+    width: 600px;
+}
+
+.container .front-page h1 {
+    display: inline-block;
+    color: #f4f4f4;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+.container .front-page p {
+    display: block;
+    font-weight: 400;
+    color: #f4f4f4;
+    letter-spacing: 1px;
+    margin-bottom: 0.5em;
+}
+
+.container .front-page a {
+    color: #333;
+    position: relative;
+    font-size: 0.9rem;
+    color: #f4f4f4;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.container .front-page a:hover .fa-fighter-jet {
+    margin-left: 32px;
+}
+
+.container .login-form {
+    position: absolute;
+    top: 7vh;
+    right: 0;
+    height: 93vh;
+    width: 400px;
+    background-color: #333;
+}
+
+.fa-fighter-jet {
+    margin-left: 12px;
+    transition: 0.4s;
+}
