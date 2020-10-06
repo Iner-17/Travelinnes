@@ -27,17 +27,14 @@
   	<div class="container">
 		<div class="bg-image"></div>
 		<div class="front-page">
-			<h1>It's More Fun in The Philippines</h1>
+			<h1>It's More Fun in The <span class="ph">Philippines</span></h1>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus incidunt perspiciatis at dolor facilis. 
 				Hic pariatur dolores sed deserunt quis, magni illo sit. Voluptatem, odio enim. Deserunt atque sunt illum?
 			</p>
 			<a href="#">Why Philippines?<i class="fas fa-fighter-jet"></i></a>
 		</div>
-		<div class="login-form">
-			<form action=""></form>
-		</div>
 	</div>
     
-
+<script src="src/app.js"></script>
 </body>
 </html>
