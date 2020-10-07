@@ -25,10 +25,23 @@ nav {
 
 nav .logo {
   text-transform: uppercase;
+  position: relative;
   color: #f4f4f4;
-  font-size: 1.6em;
+  font-size: 1.1em;
   font-weight: 800;
+  letter-spacing: 3px;
   width: 15%;
+}
+
+nav .logo .fa-fighter-jet {
+  position: absolute;
+  top: 3px;
+  transition: 1.5s;
+}
+
+nav .logo .fa-fighter-jet:hover::after,
+nav .logo:hover .fa-fighter-jet {
+  margin-left: 900px;
 }
 
 nav .header-links {
@@ -152,7 +165,7 @@ nav .ctn-form a.active:hover {
 .container .front-page h1 {
   color: #fff;
   font-size: 3rem;
-  text-align: left;
+  text-align: center;
   margin-bottom: 0.5em;
 }
 
