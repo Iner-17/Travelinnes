@@ -13,7 +13,7 @@
 <body>
 
 	<nav>
-		<div class="logo">Travelinnes<i class="fas fa-fighter-jet"></i></div>
+		<div class="logo">Travelinnes <i class="fas fa-fighter-jet"></i></div>
 		<ul class="header-links">
 			<li><a href="#">home</a></li>
 			<li><a href="#">about</a></li>
