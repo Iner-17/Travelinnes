@@ -11,18 +11,23 @@
         <form action="">
             <table>
                 <h1>Travellines</h1>
+                <h2>Register Here</h2>
                 <tbody>
                     <tr>
-                        <td>Username:</td>
-                        <td><input type="text" name="username"></td>
+                        <td><input type="text" name="fname" placeholder="Firstname"></td>
+                        <td><input type="text" name="lname" placeholder="Lastname"></td>
                     </tr>
                     <tr>
-                        <td>Password:</td>
-                        <td><input type="text" name="username"></td>
+                        <td colspan="2"><input type="text" name="username" placeholder="username"></td>
                     </tr>
                     <tr>
-                        <td>Email:</td>
-                        <td><input type="text" name="username"></td>
+                        <td colspan="2"><input type="email" name="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="password" placeholder="Password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="cfrmpassword" placeholder="Confirm Password"></td>
                     </tr>
                     <tr>
                         <td colspan="2"><button class="btn">Sign up</button></td>
