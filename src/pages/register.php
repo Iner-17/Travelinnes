@@ -33,7 +33,7 @@
                         <td colspan="2"><button class="btn">Sign up</button></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><a href="#">Already have an account? Sign in</a></td>
+                        <td colspan="2"><a href="login.php">Already have an account? Sign in</a></td>
                     </tr>
                 </tbody>
             </table>
