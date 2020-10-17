@@ -22,7 +22,7 @@
 		</ul>
 		<div class="ctn-form">
 			<a href="src/pages/register.php">sign up</a>
-			<a href="#" class="active">log in</a>
+			<a href="src/pages/login.php" class="active">log in</a>
 		</div>
 	</nav>
 	<div class="container">

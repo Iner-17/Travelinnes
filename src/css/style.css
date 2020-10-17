@@ -136,7 +136,7 @@ nav .ctn-form a.active:hover {
 
 .bg-image {
   position: relative;
-  background-image: url("images/rice.jpg");
+  background-image: url("../images/rice.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
