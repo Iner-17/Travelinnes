@@ -24,7 +24,7 @@
                                 $errorMessage = "Username must be 4 char or above";
                             }
                         ?>
-                        * <?php echo $errorMessage ?>
+                         * <?php echo $errorMessage ?> *
                     </tr>
                     <tr>
                         <td colspan="1"><input type="password" name="password" placeholder="Password" required></td>
