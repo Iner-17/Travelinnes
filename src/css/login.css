@@ -68,3 +68,6 @@ td {
     cursor: pointer;
 }
 
+form p {
+    color: red;
+}
