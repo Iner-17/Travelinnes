@@ -7,15 +7,29 @@
     <title>Travellines</title>
 </head>
 <body>
+<?php
+        $fnameError = "";
+        $fname = $_POST["fname"];
+        if (empty($fname)) {
+            $fnameError = "Please enter a valid input";
+        }
+        $lnameError = "";
+        $lname = $_POST["lname"];
+        if (empty($lname)) {
+            $lnameError = "Please enter a valid input";
+        }
+    ?>
     <div class="container">
-        <form action="">
+        <form action="register.php" method="POST">
             <table>
                 <h1>Travellines</h1>
                 <h2>Register Here</h2>
                 <tbody>
                     <tr>
-                        <td><input type="text" name="fname" placeholder="Firstname" required></td>
-                        <td><input type="text" name="lname" placeholder="Lastname" required></td>
+                        <td><input type="text" name="fname" placeholder="Firstname"></td>
+                        <span><?php echo $fnameError ?></span>
+                        <td><input type="text" name="lname" placeholder="Lastname"></td>
+                        <span><?php echo $lnameError ?></span>
                     </tr>
                     <tr>
                         <td colspan="2"><input type="text" name="username" placeholder="username" required></td>
@@ -39,5 +53,6 @@
             </table>
         </form>
     </div>
+    
 </body>
 </html>
