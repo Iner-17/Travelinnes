@@ -58,6 +58,17 @@
 				<img src="src/images/filipinos.jpg" alt="">
 			</div>
 		</section>
+
+		<section class="section-3">
+			<h2>3. Friendly and Warm Filipinos</h2>
+			<p>Cost is one of the major considerations of a traveler. Good thing, the cost of living and travel expenses in the Philippines is affordable. There are plenty of day tours that are just around PHP1000 (USD20). </p>
+			<p>You will find that there’s a lot of accommodation options for you in the Philippines as well: from hostels to cheap bed and breakfast accommodation that are both perfect for backpackers.</p>
+			<p>Food in the Philippines is cheap too. For roughly around PHP100-150(USD2-3), you will find yourself a decent breakfast place that offers classic Filipino food with coffee. The same goes for your lunch and dinner. </p>
+			<p>Filipinos are very hospitable too. They have strong family ties as part of their culture. If you have Filipino friends who invite you to their home, they will treat you like you’re a part of their family and may even serve you a feast of home-cooked Filipino food.</p>
+			<div class="img-container">
+				<img src="src/images/budget.jpg" alt="">
+			</div>
+		</section>
 	</section>
 	<script src="src/app.js"></script>
 </body>
