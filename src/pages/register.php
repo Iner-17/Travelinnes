@@ -7,16 +7,19 @@
     <title>Travellines</title>
 </head>
 <body>
-<?php
-        $fnameError = "";
-        $fname = $_POST["fname"];
-        if (empty($fname)) {
-            $fnameError = "Please enter a valid input";
+    <?php
+    $userName = "";
+    $email = "";
+    $password = "";
+    $cfrmpassword = "";
+        if (empty($_POST["username"])) {
+            $userName = "username is required!";
         }
-        $lnameError = "";
-        $lname = $_POST["lname"];
-        if (empty($lname)) {
-            $lnameError = "Please enter a valid input";
+        if (empty($_POST["password"])) {
+            $password = "password is required!";
+        }
+        if (empty($_POST["cfrmpassword"])) {
+            $cfrmpassword = "confirm password is required!";
         }
     ?>
     <div class="container">
@@ -24,31 +27,30 @@
             <table>
                 <h1>Travellines</h1>
                 <h2>Register Here</h2>
-                <tbody>
+                <tbody>                   
                     <tr>
-                        <td>
-                            <input type="text" name="fname" placeholder="Firstname"> <br>
-                            <span><?php echo $fnameError ?></span>
+                        <td colspan="2">
+                            <input type="text" name="username" placeholder="username"> <br>
+                            <span><?= $userName ?></span>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                        <input type="text" name="lname" placeholder="Lastname"> <br>
-                        <span><?php echo $lnameError ?></span>
-                    </td>
-                        
+                        <td colspan="2">
+                            <input type="email" name="email" placeholder="Email"><br>
+                            <span><?= $email ?></span>
+                        </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="text" name="username" placeholder="username"></td>
+                        <td colspan="2">
+                            <input type="password" name="password" placeholder="Password"><br>
+                            <span><?= $password ?></span>
+                        </td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="email" name="email" placeholder="Email"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="password" name="password" placeholder="Password"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input type="password" name="cfrmpassword" placeholder="Confirm Password"></td>
+                        <td colspan="2">
+                            <input type="password" name="cfrmpassword" placeholder="Confirm Password"><br>
+                            <span><?= $cfrmpassword ?></span>
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="2"><button class="btn">Sign up</button></td>
