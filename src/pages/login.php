@@ -33,7 +33,7 @@
                         <td colspan="1"><button class="btn">Login</button></td>
                     </tr>
                     <tr>
-                        <td colspan="1"><a href="#">Forgot Password?</a></td>
+                        <td colspan="1"><a href="#">Forgot Password? click here</a></td>
                     </tr>
                 </tbody>
             </table>
